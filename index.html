@@ -2,94 +2,117 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-  <meta name="description" content="Седона - туристический сайт">
+  <title>Техномарт интернет магазин</title>
+  <meta name="description" content="Техномарт интернет магазин">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">   
 </head>
+
 <body>
   <div class="body-wrapper-inner">
+
     <header class="page-header container">
+
+      <div class="page-header-top-panel">
+        <div class="page-header-top-panel-text">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+        <div class="page-header-top-panel-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+        <a href="tel:+7(812)555-05-55" class="page-header-top-panel-tel">+7 (812) 555-05-55</a>
+      </div>
+
+
       <div class="logo-wrapper">
+
         <img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта">
+
+        <div class="search-popup">
+        <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="search-popup-fieldset">
+            <legend class="search-popup-legend"><span class="visually-hidden">Поиск по сайту</span></legend>
+            <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
+            <input class="search-popup-input" name="search" id="search" placeholder="Поиск по сайту" type="search" required>
+            <button class="visually-hidden" type="submit">Поиск</button>
+          </fieldset>
+        </form>
+      </div> 
+
+      <button type="button" class="logo-wrapper-button">Войти</button>
+
       </div>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item"><a title="Перейти" class="navigation-link active-link" href="index.html">Главная</a></li>
-          <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">О Седоне</a></li>
-          <li class="navigation-item"><a title="Перейти" class="navigation-link" href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+      <div class="navigation-wrapper">
+        <nav class="navigation">
+          <ul class="navigation-list">
 
-      <div class="user-nav">
-        <button type="button" class="user-nav-search" aria-label="Поиск"></button>
-        <button type="button" class="user-nav-favourite" aria-label="В избранное"><span class="user-nav-favourite-number">12</span></button>
-        <a href="#" title="Получить преложение" class="user-nav-action-link open-popup brown-button">Хочу сюда!</a>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Главная</a></li>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Компания</a></li>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Каталог</a></li>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Новости</a></li>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Спецпредложения</a></li>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Доставка</a></li>
+            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Контакты</a></li>            
+
+          </ul>
+        </nav>
+        <a href="#" class="navigation-wrapper-favourite"><span class="visually-hidden">Избранное</span></a>
+        <a href="#" class="navigation-wrapper-cart"><span class="visually-hidden">Корзина</span></a>
+        <a href="#" class="navigation-wrapper-order-button">Оформить заказ</a>
       </div>
+
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Туристический сайт Седона</h1>
-      <section class="hero-block container">
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <img class="hero-block-img" width="458" height="352" src="img/welcome-text.svg" alt="Приветственный текст">
+      <h1 class="visually-hidden">Каталог товаров</h1>
+
+      <section class="hero-grid container">
+        <div class="hero-grid-item">
+          <div class="hero-grid-item-wrapper">
+            <h3 class="hero-grid-item-title">Материалы</h3>
+            <a class="hero-grid-item-link" href="#"></a>
+          </div>
+          <img src="" alt="" width="77" height="77">
+        </div>
+
+        <div class="hero-grid-item">
+          <div class="hero-grid-item-wrapper">
+            <h3 class="hero-grid-item-title">Материалы</h3>
+            <a class="hero-grid-item-link" href="#"></a>
+          </div>
+          <img src="" alt="" width="77" height="77">
+        </div>
+
+        <div class="hero-grid-item">
+          <div class="hero-grid-item-wrapper">
+            <h3 class="hero-grid-item-title">Материалы</h3>
+            <a class="hero-grid-item-link" href="#"></a>
+          </div>
+          <img src="" alt="" width="77" height="77">
+        </div>
+
+        <div class="hero-grid-item">
+          <div class="hero-grid-item-wrapper">
+            <h3 class="hero-grid-item-title">Материалы</h3>
+            <a class="hero-grid-item-link" href="#"></a>
+          </div>
+          <img src="" alt="" width="77" height="77">
+        </div>
+
+        <div class="hero-grid-item">
+          <div class="hero-grid-item-wrapper">
+            <h3 class="hero-grid-item-title">Материалы</h3>
+            <a class="hero-grid-item-link" href="#"></a>
+          </div>
+          <img src="" alt="" width="77" height="77">
+        </div>
+                                
+
+        
       </section>
 
-      <section class="about-box container">
-        <h2 class="about-box-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p class="about-box-decription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-
-        <ul class="about-box-squares">
-          <li class="about-box-square-item square-item square-item-has-picture about-box-square-item-dark">
-            <div class="square-item-content">
-              <h3 class="square-item-title">Настоящий городок</h3>
-              <p class="square-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <div class="square-item-picture">
-              <img width="800" height="385" src="img/true-city.jpg" class="" alt="Фото настоящего городка">
-            </div>
-          </li>
-
-          <li class="about-box-square-item square-item about-box-square-item-light ">
-            <div class="square-item-content">
-              <h3 class="square-item-title">Небольшая площадь</h3>
-              <p class="square-item-description">Все достопримечательности находятся очень близко</p>
-            </div>
-          </li>
-
-          <li class="about-box-square-item square-item about-box-square-item-very-light ">
-            <div class="square-item-content">
-              <h3 class="square-item-title">Красивая дорога</h3>
-              <p class="square-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-          </li>
-
-          <li class="about-box-square-item square-item about-box-square-item-light ">
-            <div class="square-item-content">            
-              <h3 class="square-item-title">Мало туристов</h3>
-              <p class="square-item-description">Большинство едет в Гранд Каньон и толпится там</p>
-            </div>  
-          </li>
 
 
-          <li class="about-box-square-item square-item square-item-has-picture about-box-square-item-dark">
-            <div class="square-item-picture">
-              <img width="800" height="385" src="img/bridge.jpg" class="" alt="Фото моста">
-            </div>
-            <div class="square-item-content">
-              <h3 class="square-item-title">Там есть <br>мост дьявола</h3>
-              <p class="square-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
-
-          </li>
-
-        </ul>
-
-      </section>
 
       <section class="advantages-box container">
         <h2 class="advantages-box-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
