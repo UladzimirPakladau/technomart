@@ -28,17 +28,17 @@
         <img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта">
 
         <div class="search-popup">
-        <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="search-popup-fieldset">
-            <legend class="search-popup-legend"><span class="visually-hidden">Поиск по сайту</span></legend>
-            <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
-            <input class="search-popup-input" name="search" id="search" placeholder="Поиск по сайту" type="search" required>
-            <button class="visually-hidden" type="submit">Поиск</button>
-          </fieldset>
-        </form>
-      </div> 
+          <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="search-popup-fieldset">
+              <legend class="search-popup-legend"><span class="visually-hidden">Поиск по сайту</span></legend>
+              <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
+              <input class="search-popup-input" name="search" id="search" placeholder="Поиск по сайту" type="search" required>
+              <button class="visually-hidden" type="submit">Поиск</button>
+            </fieldset>
+          </form>
+        </div> 
 
-      <button type="button" class="logo-wrapper-button">Войти</button>
+        <button type="button" class="logo-wrapper-button">Войти</button>
 
       </div>
 
@@ -111,7 +111,7 @@
           </div>
           <img src="" alt="" width="77" height="77">
         </div>
-                                
+
         <div class="hero-grid-item">
           <div class="hero-grid-item-wrapper">
             <h3 class="hero-grid-item-title">доставка</h3>
@@ -122,7 +122,177 @@
         
       </section>
 
+
+
       <section class="catalog-box container">
+
+        <div class="catalog-filter">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+            <fieldset class="catalog-filter-group range">
+
+              <legend class="catalog-filter-title filter-title-price">Цена</legend>
+
+              <div class="catalog-filter-scale">
+                <div class="catalog-filter-bar">
+                  <div class="catalog-filter-bar-scale"></div>
+                  <div class="catalog-filter-bar-scale-range"></div>
+                </div>
+
+                <button type="button" aria-label="минимальное значение" class="range-toggle range-toggle-min"></button>
+                <button type="button" aria-label="максимальное значение" class="range-toggle range-toggle-max"></button>
+              </div>
+
+              <div class="catalog-filter-range-controls">
+                <div class="catalog-filter-range-controls-price-wrapper visually-hidden">
+
+                  <div class="price-min-wrapper">
+                    <input id="controls-price-min" class="controls-price-min" type="number" min="1" value="100">
+                    <label for="controls-price-min"><span class="visually-hidden">от</span></label>
+                  </div>
+
+                  <div class="price-max-wrapper">
+                    <input id="controls-price-max" class="controls-price-max" type="number" min="1" value="500">
+                    <label for="controls-price-max"><span class="visually-hidden">до</span></label>
+                  </div>
+                </div>
+
+              </div>
+
+            </fieldset>
+
+
+            <fieldset class="catalog-filter-group manufacturer-group">
+              <legend class="catalog-filter-title">Производители</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <input class="control-input" type="checkbox" name="bosch" id="bosch">
+                  <label for="bosch" class="control">BOSCH</label>                    
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="control-input" type="checkbox" name="interskol" id="interskol">
+                  <label for="interskol" class="control">ИНТЕРСКОЛ</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="control-input" type="checkbox" name="makita" id="makita">
+                  <label for="makita" class="control">MAKIta</label>                  
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="control-input" type="checkbox" name="dewalt" id="dewalt">
+                  <label for="dewalt" class="control">Dewalt</label>                  
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="control-input" type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi" class="control">Hitachi</label>                  
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="catalog-filter-group energy-group">
+              <legend class="catalog-filter-title">Питание</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <input class="control-radio-input" type="radio" id="first-option" name="akumulator" value="akum">
+                  <label for="first-option" class="control-radio">Аккумуляторные</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <input class="control-radio-input" type="radio" id="second-option" name="network" value="network">
+                  <label for="second-option" class="control-radio">Сетевые</label>                                      
+                </li>
+
+              </ul>
+            </fieldset>
+
+
+
+            <button class="filter-button button-apply blue-button" type="submit">Показать</button>
+          </form>
+        </div>
+
+        <div class="product-wrapper">
+          <label for="sortirovka"><span class="visually-hidden">Выберите сортировку</span></label> 
+          <select class="sort-select" name="sortirovka" id="sortirovka"> 
+            <option value="popilarnost">Соритровать</option> 
+            <option value="otion_2">Опция 2</option> 
+            <option value="otion_3">Опция 3</option> 
+            <option value="otion_4">Опция 4</option> 
+          </select>
+
+          <div class="product-wrapper-inner">
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+
+            <div class="product-item">
+              <img class="product-item-img" src="" alt="" width="216" height="180">
+              <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
+              <span class="product-item-oldprice">22500 ₽</span>
+              <span class="product-item-newprice">15500 ₽</span>
+            </div>
+            
+          </div>
+
+          <div class="pagination">
+            <div class="pagination-item">1</div>
+            <div class="pagination-item current-item">2</div>  
+            <div class="pagination-item">3</div>  
+            <div class="pagination-item">4</div>
+            <div class="pagination-item pagination-button">показать еще</div>              
+          </div>
+        </div>  
+
         
       </section>
 
