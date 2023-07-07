@@ -14,51 +14,56 @@
 <body>
   <div class="body-wrapper-inner">
 
-    <header class="page-header container">
+    <header class="page-header">
 
       <div class="page-header-top-panel">
-        <div class="page-header-top-panel-text">Интернет-магазин строительных материалов и инструментов для ремонта</div>
-        <div class="page-header-top-panel-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-        <a href="tel:+7(812)555-05-55" class="page-header-top-panel-tel">+7 (812) 555-05-55</a>
+        <div class="container">
+          <div class="page-header-top-panel-text">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+          <div class="page-header-top-panel-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          <a href="tel:+7(812)555-05-55" class="page-header-top-panel-tel">+7 (812) 555-05-55</a>
+        </div>
+
       </div>
 
 
       <div class="logo-wrapper">
+        <div class="container">
+          <img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта">
 
-        <img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта">
+          <div class="search-popup">
+            <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="search-popup-fieldset">
+                <legend class="search-popup-legend"><span class="visually-hidden">Поиск:</span></legend>
+                <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
+                <input class="search-popup-input" name="search" id="search" placeholder="Поиск:" type="search" required>
+                <button class="visually-hidden" type="submit">Поиск</button>
+              </fieldset>
+            </form>
+          </div> 
 
-        <div class="search-popup">
-          <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="search-popup-fieldset">
-              <legend class="search-popup-legend"><span class="visually-hidden">Поиск по сайту</span></legend>
-              <label for="search"><span class="visually-hidden">Ваш запрос</span></label> 
-              <input class="search-popup-input" name="search" id="search" placeholder="Поиск по сайту" type="search" required>
-              <button class="visually-hidden" type="submit">Поиск</button>
-            </fieldset>
-          </form>
-        </div> 
-
-        <button type="button" class="logo-wrapper-button">Войти</button>
-
+          <button type="button" class="logo-wrapper-button">Войти</button>
+        </div>
       </div>
 
       <div class="navigation-wrapper">
-        <nav class="navigation">
-          <ul class="navigation-list">
+        <div class="container">
+          <nav class="navigation">
+            <ul class="navigation-list">
 
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Главная</a></li>
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Компания</a></li>
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Каталог</a></li>
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Новости</a></li>
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Спецпредложения</a></li>
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Доставка</a></li>
-            <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Контакты</a></li>            
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Главная</a></li>
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Компания</a></li>
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Каталог</a></li>
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Новости</a></li>
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Спецпредложения</a></li>
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Доставка</a></li>
+              <li class="navigation-item"><a title="Перейти" class="navigation-link" href="#">Контакты</a></li>            
 
-          </ul>
-        </nav>
-        <a href="#" class="navigation-wrapper-favourite"><span class="visually-hidden">Избранное</span></a>
-        <a href="#" class="navigation-wrapper-cart"><span class="visually-hidden">Корзина</span></a>
-        <a href="#" class="navigation-wrapper-order-button">Оформить заказ</a>
+            </ul>
+          </nav>
+          <a href="#" class="navigation-wrapper-favourite"><span class="visually-hidden">Избранное</span></a>
+          <a href="#" class="navigation-wrapper-cart"><span class="visually-hidden">Корзина</span></a>
+          <a href="#" class="navigation-wrapper-order-button">Оформить заказ</a>
+        </div>
       </div>
 
     </header>
@@ -301,14 +306,14 @@
       <section class="advantages-box container">
         <h2 class="advantages-box-title">Сервисы</h2>
         <p class="advantages-box-decription">Хороший интернет-магазин отличается от плохого не только ценами!
-Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
         <ul class="advantages-box-wrapper">
           <li class="advantage-item">
             <img class="advantage-item-delivery-img" src="iimg/discount-icon.svg" alt="">
             <h3 class="advantage-item-title">Доставка</h3>
             <p class="advantage-item-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, 
-поднимая его на ваш этаж!</p>
+            поднимая его на ваш этаж!</p>
           </li>
 
           <li class="advantage-item">
@@ -321,7 +326,7 @@
             <img class="advantage-item-loan-img" src="img/paint-roller-icon.svg" alt="">
             <h3 class="advantage-item-title">Кредит</h3>
             <p class="advantage-item-description">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита.
-Все как в банке, только проще!</p>
+            Все как в банке, только проще!</p>
           </li>
 
         </ul>
@@ -333,7 +338,7 @@
           <h2 class="contacts-box-title">КОМПАНИЯ «Техномарт»</h2>
           <p class="contacts-decription">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 
-          Мы можем доставить ваш товар в самые отдаленные точки России!
+            Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:</p>
           <a class="contacts-link red-button" href="#">О компании</a>
         </div>
@@ -346,43 +351,43 @@
 
       </section>
 
-     
+      
     </main> 
 
     <footer class="page-footer container">
 
-    <div class="footer-column-wrapper">
-      <div class="page-footer-column">
-      <ul class="page-footer-social-list">
-        <img class="footer-logo-img" src="" alt="">
-        <p class="page-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-        <li class="footer-social-item">
-          <a target="_blank" rel="nofollow noopener" class="footer-social-link pinterest" href="#">
-            <span class="visually-hidden">Пинтерест</span>
-          </a>
-        </li>
+      <div class="footer-column-wrapper">
+        <div class="page-footer-column">
+          <ul class="page-footer-social-list">
+            <img class="footer-logo-img" src="" alt="">
+            <p class="page-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+            <li class="footer-social-item">
+              <a target="_blank" rel="nofollow noopener" class="footer-social-link pinterest" href="#">
+                <span class="visually-hidden">Пинтерест</span>
+              </a>
+            </li>
 
-        <li class="footer-social-item">
-          <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
+            <li class="footer-social-item">
+              <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
 
-        <li class="footer-social-item">
-          <a target="_blank" rel="nofollow noopener" class="footer-social-link vsco" href="#">
-            <span class="visually-hidden">Вско</span>
-          </a>
-        </li>
+            <li class="footer-social-item">
+              <a target="_blank" rel="nofollow noopener" class="footer-social-link vsco" href="#">
+                <span class="visually-hidden">Вско</span>
+              </a>
+            </li>
 
-      </ul>
-    </div>
+          </ul>
+        </div>
 
-    <div class="page-footer-column">
+        <div class="page-footer-column">
 
 
-      <p class="page-footer-column-heading">Обратная связь:</p>
-      <a class="page-footer-column-mail" href="#">mail@htmlacademy.ru</a>
-      <span class="page-footer-text-before-form">Получайте лучшие предложения</span>
+          <p class="page-footer-column-heading">Обратная связь:</p>
+          <a class="page-footer-column-mail" href="#">mail@htmlacademy.ru</a>
+          <span class="page-footer-text-before-form">Получайте лучшие предложения</span>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="subscribe-form-box-wrapper">              
               <input type="email" name="signup-email" id="signup-email" class="signup-email-input" placeholder="email@example.com" required>
@@ -390,14 +395,14 @@
               <button class="subscribe-form-button button blue-button" type="submit"><span class="visually-hidden">Получить</span></button>
             </div>
           </form>
-      
-    </div>
-  </div>
+          
+        </div>
+      </div>
 
-  <div class="footer-column-second-wrapper">
-    <div class="footer-copywrite">© 2010–2019 Компания «Техномарт» Все права защищены</div>
-    <div class="footer-developer-text">Разработано — <a href="#" class="footer-dev-link">htmlacademy.ru</a></div>
-  </div>
+      <div class="footer-column-second-wrapper">
+        <div class="footer-copywrite">© 2010–2019 Компания «Техномарт» Все права защищены</div>
+        <div class="footer-developer-text">Разработано — <a href="#" class="footer-dev-link">htmlacademy.ru</a></div>
+      </div>
 
     </footer>
 
