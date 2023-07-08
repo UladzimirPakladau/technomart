@@ -28,7 +28,7 @@
 
       <div class="logo-wrapper">
         <div class="container">
-          <img class="logo-wrapper-img" width="140" height="70" src="img/logo.svg" alt="Логотип сайта">
+          <img class="logo-wrapper-img" width="220" height="50" src="img/logo.svg" alt="Логотип сайта">
 
           <div class="search-popup">
             <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -60,9 +60,11 @@
 
             </ul>
           </nav>
-          <a href="#" class="navigation-wrapper-favourite"><span class="visually-hidden">Избранное</span></a>
-          <a href="#" class="navigation-wrapper-cart"><span class="visually-hidden">Корзина</span></a>
-          <a href="#" class="navigation-wrapper-order-button">Оформить заказ</a>
+          <div class="user-shop-nav">
+            <a href="#" class="navigation-wrapper-favourite"><span class="visually-hidden">Избранное</span></a>
+            <a href="#" class="navigation-wrapper-cart"><span class="visually-hidden">Корзина</span></a>
+            <a href="#" class="navigation-wrapper-order-button">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
@@ -72,7 +74,7 @@
       <h1 class="visually-hidden">Каталог товаров</h1>
 
       <section class="hero-grid container">
-        <div class="hero-grid-item">
+        <div class="hero-grid-item materials sticker">
           <div class="hero-grid-item-wrapper">
             <h3 class="hero-grid-item-title">Материалы</h3>
             <a class="hero-grid-item-link" href="#">на любой вкус</a>
@@ -80,7 +82,7 @@
           <img src="img/paint-roller.svg" alt="" width="77" height="77">
         </div>
 
-        <div class="hero-grid-item">
+        <div class="hero-grid-item tools">
           <div class="hero-grid-item-wrapper">
             <h3 class="hero-grid-item-title">инструмент</h3>
             <a class="hero-grid-item-link" href="#">на все случаи</a>
@@ -88,7 +90,7 @@
           <img src="img/drill.svg" alt="" width="86" height="71">
         </div>
 
-        <div class="hero-grid-item">
+        <div class="hero-grid-item equipment">
           <div class="hero-grid-item-wrapper">
             <h3 class="hero-grid-item-title">техника</h3>
             <a class="hero-grid-item-link" href="#">для стройки</a>
@@ -110,7 +112,7 @@
 
         </div>
 
-        <div class="hero-grid-item">
+        <div class="hero-grid-item discounts">
           <div class="hero-grid-item-wrapper">
             <h3 class="hero-grid-item-title">скидки 50%</h3>
             <a class="hero-grid-item-link" href="#">на 350 товаров</a>
@@ -118,12 +120,12 @@
           <img src="img/discount.svg" alt="" width="86" height="77">
         </div>
 
-        <div class="hero-grid-item">
+        <div class="hero-grid-item delivery">
           <div class="hero-grid-item-wrapper">
             <h3 class="hero-grid-item-title">доставка</h3>
             <a class="hero-grid-item-link" href="#">бесплатно</a>
           </div>
-          <img src="img/delivery-icon.svg" alt="" width="86" height="63">
+          <img src="img/delivery.svg" alt="" width="90" height="90">
         </div>
         
       </section>
@@ -150,15 +152,15 @@
               </div>
 
               <div class="catalog-filter-range-controls">
-                <div class="catalog-filter-range-controls-price-wrapper visually-hidden">
+                <div class="catalog-filter-range-controls-price-wrapper">
 
                   <div class="price-min-wrapper">
-                    <input id="controls-price-min" class="controls-price-min" type="number" min="1" value="100">
+                    <input id="controls-price-min" class="controls-price-min" type="number" min="1" value="0">
                     <label for="controls-price-min"><span class="visually-hidden">от</span></label>
                   </div>
-
+                  <div class="middle-filter-range"><div class="middle-filter-range-line"></div></div>
                   <div class="price-max-wrapper">
-                    <input id="controls-price-max" class="controls-price-max" type="number" min="1" value="500">
+                    <input id="controls-price-max" class="controls-price-max" type="number" min="1" value="30000">
                     <label for="controls-price-max"><span class="visually-hidden">до</span></label>
                   </div>
                 </div>
@@ -225,8 +227,12 @@
           </select>
 
           <div class="product-wrapper-inner">
-            <div class="product-item">
+            <div class="product-item sticker">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -234,6 +240,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -241,6 +251,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -248,6 +262,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -255,6 +273,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -262,6 +284,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -269,6 +295,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -276,6 +306,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -283,6 +317,10 @@
 
             <div class="product-item">
               <img class="product-item-img" src="img/drill-product-photo.jpg" alt="" width="216" height="180">
+              <div class="shop-button-group">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="add-to-favourite" href="#">В закладки</a>
+              </div>
               <span class="product-item-title">Перфоратор BOSCH BFG 3000</span>
               <span class="product-item-oldprice">22500 ₽</span>
               <span class="product-item-newprice">15500 ₽</span>
@@ -303,34 +341,36 @@
       </section>
 
 
-      <section class="advantages-box container">
-        <h2 class="advantages-box-title">Сервисы</h2>
-        <p class="advantages-box-decription">Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <section class="advantages-box">
+        <div class="advantages-box-wrapper container">
 
-        <ul class="advantages-box-wrapper">
-          <li class="advantage-item">
-            <img class="advantage-item-delivery-img" src="iimg/discount-icon.svg" alt="">
-            <h3 class="advantage-item-title">Доставка</h3>
-            <p class="advantage-item-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, 
-            поднимая его на ваш этаж!</p>
-          </li>
+          <h2 class="advantages-box-title">Сервисы</h2>
+          <p class="advantages-box-decription">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-          <li class="advantage-item">
-            <img class="advantage-item-garanty-img" src="img/delivery-icon.svg" alt="">
-            <h3 class="advantage-item-title">Гарантия</h3>
-            <p class="advantage-item-description">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
-          </li>
+          <ul class="advantages-list-wrapper">
+            <li class="advantage-item">
+              <img class="advantage-item-delivery-img" src="img/delivery-icon.svg" alt="">
+              <h3 class="advantage-item-title">Доставка</h3>
+              <p class="advantage-item-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, 
+              поднимая его на ваш этаж!</p>
+            </li>
 
-          <li class="advantage-item">
-            <img class="advantage-item-loan-img" src="img/paint-roller-icon.svg" alt="">
-            <h3 class="advantage-item-title">Кредит</h3>
-            <p class="advantage-item-description">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита.
-            Все как в банке, только проще!</p>
-          </li>
+            <li class="advantage-item">
+              <img class="advantage-item-garanty-img" src="img/discount-icon.svg" alt="">
+              <h3 class="advantage-item-title">Гарантия</h3>
+              <p class="advantage-item-description">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
+            </li>
 
-        </ul>
+            <li class="advantage-item">
+              <img class="advantage-item-loan-img" src="img/paint-roller-icon.svg" alt="">
+              <h3 class="advantage-item-title">Кредит</h3>
+              <p class="advantage-item-description">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита.
+              Все как в банке, только проще!</p>
+            </li>
 
+          </ul>
+        </div>
       </section> 
 
       <section class="contacts-box container">
@@ -354,56 +394,60 @@
       
     </main> 
 
-    <footer class="page-footer container">
+    <footer class="page-footer">
 
       <div class="footer-column-wrapper">
-        <div class="page-footer-column">
-          <ul class="page-footer-social-list">
-            <img class="footer-logo-img" src="" alt="">
-            <p class="page-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-            <li class="footer-social-item">
-              <a target="_blank" rel="nofollow noopener" class="footer-social-link pinterest" href="#">
-                <span class="visually-hidden">Пинтерест</span>
-              </a>
-            </li>
+        <div class="footer-column-wrapper-inner container">
 
-            <li class="footer-social-item">
-              <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
+          <div class="page-footer-column">
+            <img class="footer-logo-img" src="img/footer-logo.svg" alt="">
+            <p class="page-footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
 
-            <li class="footer-social-item">
-              <a target="_blank" rel="nofollow noopener" class="footer-social-link vsco" href="#">
-                <span class="visually-hidden">Вско</span>
-              </a>
-            </li>
+            <ul class="page-footer-social-list">            
+              <li class="footer-social-item">
+                <a target="_blank" rel="nofollow noopener" class="footer-social-link pinterest" href="#">
+                  <span class="visually-hidden">Пинтерест</span>
+                </a>
+              </li>
 
-          </ul>
-        </div>
+              <li class="footer-social-item">
+                <a target="_blank" rel="nofollow noopener" class="footer-social-link vk" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
 
-        <div class="page-footer-column">
+              <li class="footer-social-item">
+                <a target="_blank" rel="nofollow noopener" class="footer-social-link vsco" href="#">
+                  <span class="visually-hidden">Вско</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="page-footer-column right-column">
 
 
-          <p class="page-footer-column-heading">Обратная связь:</p>
-          <a class="page-footer-column-mail" href="#">mail@htmlacademy.ru</a>
-          <span class="page-footer-text-before-form">Получайте лучшие предложения</span>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="subscribe-form-box-wrapper">              
-              <input type="email" name="signup-email" id="signup-email" class="signup-email-input" placeholder="email@example.com" required>
-              <label for="signup-email" class="subscribe-form-box-label"><span class="visually-hidden">email@example.com</span></label> 
-              <button class="subscribe-form-button button blue-button" type="submit"><span class="visually-hidden">Получить</span></button>
-            </div>
-          </form>
-          
+            <p class="page-footer-column-heading">Обратная связь:</p>
+            <a class="page-footer-column-mail" href="#">mail@htmlacademy.ru</a>
+            <span class="page-footer-text-before-form">Получайте лучшие предложения</span>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="subscribe-form-box-wrapper">              
+                <input type="email" name="signup-email" id="signup-email" class="signup-email-input" placeholder="email@example.com" required>
+                <label for="signup-email" class="subscribe-form-box-label"><span class="visually-hidden">email@example.com</span></label> 
+                <button class="subscribe-form-button button blue-button" type="submit"><span class="visually-hidden">Получить</span></button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
       <div class="footer-column-second-wrapper">
-        <div class="footer-copywrite">© 2010–2019 Компания «Техномарт» Все права защищены</div>
-        <div class="footer-developer-text">Разработано — <a href="#" class="footer-dev-link">htmlacademy.ru</a></div>
+        <div class="footer-column-second-wrapper-inner container">
+          <div class="footer-copywrite">© 2010–2019 Компания «Техномарт» Все права защищены</div>
+          <div class="footer-developer-text">Разработано — <a href="#" class="footer-dev-link">htmlacademy.ru</a></div>
+        </div>
       </div>
-
     </footer>
 
 
