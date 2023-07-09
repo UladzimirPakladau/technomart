@@ -182,6 +182,8 @@ html {
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 
 .navigation-link {
@@ -281,6 +283,7 @@ html {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 10px;
+  max-width: 200px;
 }
 
 .hero-grid-item-link {
@@ -328,6 +331,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .slider-box img {
@@ -614,6 +618,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 300px;
 }
 
 .page-footer-column-heading {
@@ -1259,8 +1264,8 @@ button.range-toggle {
   min-width: 360px;
   box-sizing: border-box;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 115px;
+  top: 10px;
   z-index: 5;
 }
 
