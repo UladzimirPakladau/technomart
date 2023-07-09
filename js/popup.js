@@ -1,4 +1,4 @@
-let popup = document.querySelector('.search-popup');
+let popup = document.querySelector('.login-popup');
 let popupButton = document.querySelector('.open-popup');
 let closeButton = document.querySelector('.close-popup');
 

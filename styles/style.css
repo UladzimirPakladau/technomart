@@ -118,25 +118,29 @@ html {
 .page-header-top-panel-text {
   color: #EE3643;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
   line-height: 18px;
+  letter-spacing: -0.37px;
 }
 
 .page-header-top-panel-adress {
   color: #32425C;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  position: relative;
+  top: -2px;
+  margin-left: 182px;
 }
 
 .page-header-top-panel-tel {
   color: var(--basic-grey-click, #293449);
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -153,7 +157,7 @@ html {
 
 .search-popup-input {
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -163,7 +167,7 @@ html {
 .logo-wrapper-button {
   color: var(--basic-background, #F1F5F7);
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -183,7 +187,7 @@ html {
 .navigation-link {
   color: #FFF;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -193,7 +197,6 @@ html {
 .page-header-top-panel .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 13px 0;
 }
 
@@ -205,6 +208,7 @@ html {
 
 .logo-wrapper {
  background: #293449; 
+ position: relative;
 }
 
 .navigation-wrapper {
@@ -215,29 +219,30 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 19px 0 27px 0;
+  padding: 10px 0 18px 0;
   align-items: center;
 }
 
 .navigation-list {
   display: flex;
   justify-content: space-between;
-  min-width: 651px;
-  max-width: 670px;
+  min-width: 773px;
+  max-width: 750px;
+  margin-left: 2px;
 }
 
 .navigation-wrapper-order-button {
   color: #FFF;
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 12px 10px;
+  padding: 12px 13px;
   border-radius: 4px;
   background: #63A63E;
 }
@@ -269,7 +274,7 @@ html {
 .hero-grid-item-title {
   color: #FFF;
   font-size: 24px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
@@ -281,7 +286,7 @@ html {
 .hero-grid-item-link {
   color: var(--white, #fff);
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -289,8 +294,9 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #fff;
-  padding: 11px;
+  padding: 9px;
   position: relative;
+  min-width: 160px;
 }
 
 .hero-grid-item-description {
@@ -312,7 +318,7 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 180px);
-  gap: 30px;
+  gap: 29px;
   margin-bottom: 50px;
 }
 
@@ -354,6 +360,9 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .catalog-filter {
@@ -364,7 +373,7 @@ html {
   max-width: 876px;
 }
 
-.catalog-box {
+.catalog-box-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -385,28 +394,30 @@ html {
 .product-wrapper-inner {
   display: flex;
   flex-wrap: wrap;
+  gap: 0 33px;
 }
 
 .product-item-title {
   color: var(--basic-grey-click, #293449);
   text-align: center;
   font-size: 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
+  max-width: 180px;
 }
 
 .catalog-filter-title {
   color: #000;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .pagination {
@@ -415,6 +426,9 @@ html {
   gap: 8px;
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
+  left: 34px;
+  top: 3px;
 }
 
 .pagination-item {
@@ -422,7 +436,7 @@ html {
   background: #3D546F;
   color: #FFF;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -437,12 +451,21 @@ html {
 .pagination-item.pagination-button {
   width: auto;
   background: #EE3643;
-  padding: 14px 38px;
+  padding: 15px 37px;
   box-sizing: border-box;
+  position: relative;
+  left: 10px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .advantages-box-wrapper {
-  padding: 52px 0 53px 0;
+  padding: 25px 0 0 0;
 }
 
 .advantages-list-wrapper {
@@ -461,7 +484,7 @@ html {
   color: var(--basic-grey-click, #293449);
   text-align: center;
   font-size: 36px;
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 42px;
@@ -472,7 +495,7 @@ html {
   color: var(--basic-grey-click, #293449);
   text-align: center;
   font-size: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -486,7 +509,7 @@ html {
   background: var(--white, #FFF);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   max-width: 370px;
-  padding: 34px 34px 29px 31px;
+  padding: 24px 34px 29px 31px;
   box-sizing: border-box;
   margin-bottom: 53px;
 }
@@ -494,17 +517,18 @@ html {
 .advantage-item-title {
   color: var(--basic-grey-hover, #32425C);
   font-size: 24px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 37px;
 }
 
 .advantage-item-description {
   color: #000;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -517,21 +541,24 @@ html {
 .contacts-box-title {
   color: var(--basic-grey-click, #293449);
   font-size: 36px;
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 42px;
   text-transform: uppercase;
+  margin-top: 2px;
+  margin-bottom: 23px;
+  letter-spacing: 0.24px;
 }
 
 .contacts-decription {
   color: var(--basic-grey-click, #293449);
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 52px;
+  margin-bottom: 29px;
 }
 
 .contacts-box-map {
@@ -542,7 +569,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 49px;
+  margin-bottom: 41px;
 }
 
 .contacts-link.red-button {
@@ -551,14 +578,17 @@ html {
   color: #FFF;
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 14px 45px;
+  padding: 14px 41px;
+  margin-top: 52px;
+  display: block;
+  max-width: 115px;
 }
 
 .footer-column-wrapper {
@@ -572,7 +602,7 @@ html {
 .page-footer-text {
   color: #F3F7F9;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -589,43 +619,46 @@ html {
 .page-footer-column-heading {
   color: #FFF;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
   margin-top: 15px;
+  text-align: right;
 }
 
 .page-footer-column-mail {
   color: #FFD180;
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
   margin-bottom: 29px;
+  text-align: right;
 }
 
 .signup-email-input {
-    color: var(--basic-neutral, #BDBDBD);
-    font-size: 14px;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    border: none;
+  color: var(--basic-neutral, #BDBDBD);
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  border: none;
+  min-width: 186px;
 }
 
 .signup-email-input {
-    color: var(--basic-neutral, #BDBDBD);
-    font-size: 14px;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    padding: 10px 16px 12px 16px;
+  color: var(--basic-neutral, #BDBDBD);
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 11px 16px 11px 16px;
 }
 
 .page-footer-column.right-column {
@@ -636,16 +669,18 @@ html {
 .page-footer-text-before-form {
   color: var(--basic-white, #FFF);
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  text-align: right;
+  margin-bottom: 2px;
 }
 
 .footer-copywrite {
   color: #FFF;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -654,7 +689,7 @@ html {
 .footer-developer-text {
   color: #FFF;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -680,6 +715,8 @@ html {
 
 .page-header-top-panel-tel {
   position: relative;
+  letter-spacing: 2.61px;
+  margin-left: auto;
 }
 
 .page-header-top-panel-tel::before {
@@ -718,6 +755,7 @@ html {
 
 .logo-wrapper-button {
   position: relative;
+  padding: 0;
 }
 
 .logo-wrapper-button::before {
@@ -727,8 +765,8 @@ html {
   height: 16px;
   position: absolute;
   background: url(../img/enter-icon.svg);
-  left: -20px;
-  top: 2px;
+  left: -28px;
+  top: 1px;
 }
 
 .hero-grid-item-link::before {
@@ -748,11 +786,12 @@ html {
 
 .slider-box .hero-grid-item-link {
   background: #EE3643;
-  min-width: 195px;
+  min-width: 177px;
   text-align: center;
   border: none;
   border-radius: 4px;
   margin-top: auto;
+  padding: 14px 9px;
 }
 
 .slider-box .hero-grid-item-wrapper {
@@ -766,8 +805,8 @@ html {
   background: url(../img/icon-left.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: 23px;
-  top: 50%;
+  left: 19px;
+  top: 46%;
 }
 
 .next-slide {
@@ -777,8 +816,8 @@ html {
   background: url(../img/icon-right.svg);
   background-repeat: no-repeat;
   position: absolute;
-  right: 23px;
-  top: 50%;
+  right: 20px;
+  top: 46%;
 }
 
 .navigation-wrapper-favourite {
@@ -786,6 +825,8 @@ html {
   height: 18px;
   background-repeat: no-repeat;
   background: url(../img/bookmark-icon.svg);
+  position: relative;
+  right: -9px;
 }
 
 .navigation-wrapper-cart {
@@ -798,7 +839,7 @@ html {
 .user-shop-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   max-width: 310px;
 }
 
@@ -822,15 +863,17 @@ html {
   border-radius: 2px;
   border: 1px solid #3D546F;
   background: #FFF;
-  min-width: 280px;
-  padding: 8px 16px;
+  min-width: 279px;
+  padding: 8px 11px;
   color: var(--basic-grey-click, #293449);
   font-size: 16px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 31px;
+  margin-top: 31px;
+  margin-left: 5px;
 }
 
 button.range-toggle {
@@ -842,14 +885,14 @@ button.range-toggle {
 }
 
 .catalog-filter-bar-scale {
-  width: 166px;
+  width: 181px;
   height: 2px;
   background: #3D546F;
 }
 
 .catalog-filter-bar-scale-range {
   background: #5FBB2D;
-  width: 64px;
+  width: 75px;
   height: 2px;
   position: relative;
   top: -2px;
@@ -862,22 +905,23 @@ button.range-toggle {
   position: relative;
   height: 40px;
   margin-bottom: 7px;
+  box-sizing: border-box;
 }
 
 .range-toggle.range-toggle-min {
   position: absolute;
-  top: 20px;
+  top: 10px;
 }
 
 .range-toggle.range-toggle-max {
   position: absolute;
-  top: 20px;
-  left: 70px;
+  top: 10px;
+  left: 90px;
 }
 
 .catalog-filter-bar {
   position: relative;
-  top: 20px;
+  top: 10px;
 }
 
 .controls-price-min {
@@ -889,7 +933,7 @@ button.range-toggle {
   color: var(--basic-grey-click, #293449);
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -905,7 +949,7 @@ button.range-toggle {
   color: var(--basic-grey-click, #293449);
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -936,7 +980,15 @@ button.range-toggle {
 }
 
 
-.catalog-filter .control-input {
+.popup-login-list .control-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.control-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -951,7 +1003,13 @@ button.range-toggle {
   cursor: pointer;
   position: relative;
   margin-right: 10px;
-  margin-left: 7px;
+  margin-left: -1px;
+  color: #000;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .control::before {
@@ -960,7 +1018,7 @@ button.range-toggle {
   width: 21px;
   height: 21px;
   background-image: url("../img/checkbox-default.svg");
-  margin-right: 8px;
+  margin-right: 14px;
   background-repeat: no-repeat;
 }
 
@@ -982,16 +1040,24 @@ button.range-toggle {
   user-select: none;
   margin-right: 16px;
   cursor: pointer;
+  color: #000;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .control-radio::before {
-  content:" ";
+  content: " ";
   display: inline-block;
   width: 22px;
   height: 22px;
-  background-image: url("../img/radio-default.svg");
-  margin-right: 8px;
+  background-image: url(../img/radio-default.svg);
+  margin-right: 18px;
   background-repeat: no-repeat;
+  position: relative;
+  left: 4px;
 }
 
 .control-radio-input:checked + .control-radio::before{
@@ -999,7 +1065,7 @@ button.range-toggle {
 }
 
 .manufacturer-group, .energy-group {
-  margin-bottom: 47px;
+  margin-bottom: 35px;
 }
 
 .button-apply {
@@ -1011,7 +1077,7 @@ button.range-toggle {
   color: #32425C;
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -1023,7 +1089,7 @@ button.range-toggle {
   color: #A9A9A9;
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -1032,17 +1098,18 @@ button.range-toggle {
   text-decoration: line-through;
   max-width: 100px;
   margin-bottom: 11px;
+  min-height: 18px;
 }
 
 .product-item-newprice {
   color: #FFF;
   text-align: center;
   font-size: 14px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 2.6px;
   text-transform: uppercase;
   min-width: 139px;
   min-height: 40px;
@@ -1062,47 +1129,47 @@ button.range-toggle {
 }
 
 .buy-button {
-    color: #FFF;
-    text-align: center;
-    font-size: 14px;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-    padding: 11px 24px;
-    background: #63A63E;
-    text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 11px 24px;
+  background: #63A63E;
+  text-decoration: none;
 }
 
 .add-to-favourite {
-    color: #32425C;
-    text-align: center;
-    font-size: 14px;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 2px;
-    border: 2px solid #63A63E;
-    background: #FFF;
-    padding: 11px 10px;
+  color: #32425C;
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 2px solid #63A63E;
+  background: #FFF;
+  padding: 11px 10px;
 }
 
 .buy-button::before {
-    display: inline-block;
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: url(../img/cart-icon-button.svg);
-    position: relative;
-    left: -5px;
-    top: 1px;
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url(../img/cart-icon-button.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
 }
 
 .shop-button-group {
@@ -1119,15 +1186,15 @@ button.range-toggle {
 }
 
 .pagination-item.current-item {
-    background: #FFF;
-    color: #3D546F;
+  background: #FFF;
+  color: #3D546F;
 }
 
 .footer-social-item a {
-    width: 36px;
-    height: 36px;
-    background-repeat: no-repeat;
-    display: block;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .pinterest {
@@ -1143,29 +1210,366 @@ button.range-toggle {
 }
 
 .page-footer-social-list {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 34px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 34px;
 }
 
 .subscribe-form-button {
-    background: url(../img/mini-icon-cart.svg), #63A63E;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    border: none;
+  background: url(../img/mini-icon-cart.svg), #63A63E;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border: none;
 }
 
 .subscribe-form-box-wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .subscribe-form-box-wrapper {
-    display: flex;
-    align-items: center;
-    border-radius: 2px;
-    border: 1px solid var(--basic-green, #63A63E);
-    background: var(--basic-white, #FFF);
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid var(--basic-green, #63A63E);
+  background: var(--basic-white, #FFF);
+}
+
+.login-popup-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: 0;
+}
+
+.popup-login-group.remember-me {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login-popup {
+  border-radius: 2px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  padding: 22px 29px 35px 31px;
+  min-width: 360px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.login-popup-legend {
+  color: #000;
+  font-size: 24px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+
+.close-popup {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url(../img/close-popup.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  top: 20px
+}
+
+.popup-login-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.login-button-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.login-popup-name-input {
+  border-radius: 2px;
+  color: #000;
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid var(--basic-greylight, #C5C5C5);
+  padding: 8px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+}
+
+.login-popup-area-input {
+  border-radius: 2px;
+  color: #000;
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid var(--basic-greylight, #C5C5C5);
+  padding: 8px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.login-popup-quick-link {
+  color: #000;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.login-popup .control {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 0;
+  color: #000;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.login-popup-quick-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.popup-login-item {
+  display: flex;
+  align-items: center;
+}
+
+.login-button-navigation-enter {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #63A63E;
+  text-decoration: none;
+  padding: 11px 26px 11px 26px;
+  border: 2px solid var(--basic-green, #63A63E);
+  margin-right: 5px;
+}
+
+.login-button-navigation-item-registr {
+  color: #32425C;
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 11px 9px;
+  border-radius: 2px;
+  border: 2px solid var(--basic-green, #63A63E);
+  box-sizing: border-box;
+}
+
+.login-button-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-button-navigation-enter::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../img/enter-white-icon.svg);
+  left: -5px;
+  top: 2px;
+  position: relative;
+}
+
+.popup-switcher {
+  display: none;
+}
+
+.login-success {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  max-width: 360px;
+  padding: 22px 31px 33px 31px;
+  display: none;
+}
+
+.login-success-title {
+  color: #000;
+  font-size: 24px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.login-success-orders, .login-success-lk {
+  color: var(--basic-grey, #3D546F);
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.login-button-navigation-item-exit {
+  color: #32425C;
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 11px 9px;
+  border-radius: 2px;
+  border: 2px solid var(--basic-green, #63A63E);
+  box-sizing: border-box;
+  max-width: 145px;
+}
+
+.login-success-orders {
+  margin-bottom: 23px;
+}
+
+.login-success-lk {
+  margin-bottom: 24px;
+}
+
+.catalog-product-title {
+  margin: 0;
+  color: var(--basic-grey-click, #293449);
+  font-size: 36px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  letter-spacing: 0.4px;
+}
+
+.search-popup-input::placeholder {
+  position: relative;
+  left: 10px;
+}
+
+.materials .hero-grid-small-img {
+  position: relative;
+  left: -19px;
+  top: 6px;
+}
+
+.tools .hero-grid-small-img {
+  position: relative;
+  left: -13px;
+  top: 6px;
+}
+
+.equipment .hero-grid-small-img {
+  position: relative;
+  left: -14px;
+  top: 5px;
+}
+
+.discounts .hero-grid-small-img {
+  position: relative;
+  left: -13px;
+  top: 4px;
+}
+
+.delivery .hero-grid-small-img {
+  position: relative;
+  left: -10px;
+  top: 4px;
+}
+
+.slider-box .hero-grid-item-title {
+  color: #FFF;
+  font-size: 36px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.hero-grid-item.slider-box {
+  padding: 48px 25px 41px 50px;
+}
+
+.product-item-img {
+  margin-bottom: 13px;
+}
+
+.product-item-newprice span {
+  position: relative;
+  left: -7px;
+}
+
+.catalog-filter-title.manufacturer {
+  margin-bottom: 17px;
+}
+
+legend.catalog-filter-title.energy {
+  margin-bottom: 16px;
+}
+
+.text-garanty {
+  position: relative;
+  left: 3px;
+  top: -3px;
+}
+
+.text-loan {
+  position: relative;
+  top: -3px;
+}
+
+img.footer-logo-img {
+  margin-bottom: 11px;
 }
